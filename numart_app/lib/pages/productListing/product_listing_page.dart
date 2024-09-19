@@ -87,6 +87,7 @@ class _ProductListingScreenState extends State<ProductListingScreen> {
               final imageUrl = 'https://static-numart.s3.amazonaws.com/images/$productIdInt.png';
               print('<----imageUrl : ${imageUrl}');
 
+
               return ProductGridItem(
                 name: product['newProductName'] ?? 'No Name',
                 price: product['salePrice'] != null ? '\$${product['salePrice']}' : 'No Price',
